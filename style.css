@@ -1,0 +1,259 @@
+/*main nav section*/
+#nav-section {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0.2px;
+  background-color: #ffffff;
+  border-radius: 10px; /*how curvey the corners are of the box*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+/*contact details part in contact me page*/
+#contact-details {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 10px; /*how curvey the corners are of the box*/
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#contact-details img {
+  width: 40px; /* Adjust the width to your desired size */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  vertical-align: middle;
+}
+
+#contact-details ul a {
+  margin-right: 20px; /* Adjust the margin-right value to create the desired space */
+}
+
+.main-footer {
+  text-align: center;
+  margin: 0 auto;
+  color: #0056b3;
+  max-width: 300px;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 10px; /*how curvey the corners are of the box*/
+  box-shadow: 0 0 05px rgba(0, 0, 0, 0.1);
+}
+
+/*Jake Squelch, Portfolio, Contact me*/
+.main-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  color: #007bff;
+}
+
+/*creates the main huge text boxes seen on each page*/
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+#body-section {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px; 
+}
+
+/*project 1*/
+#image1 img {
+  width: 200px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/*project 2*/
+#image2 img {
+  width: 400px;
+  border-radius: 5px;
+  float: right;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/*project 3*/
+#image3 img {
+  width: 200px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/*how all my buttons look*/
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-button,.linkedin-button,.github-button {
+  text-align: center;
+}
+
+.language {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*html image*/
+#html img {
+  width: 25px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/*java image*/
+#java img {
+  width: 25px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/*processing image*/
+#processing img {
+  width: 25px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.rating span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #ddd; /* gray color */
+  margin-right: 5px;
+}
+
+.rating .filled {
+  background-color: #73b7ff; /* blue color, matching my theme */
+}
+
+/*Below: where someone can contact me about project*/
+.contact-me {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#contact-form {
+  display: grid;
+  gap: 10px;
+}
+
+/*makes all the labels bold (looks alot better on the form)*/
+label {
+  font-weight: bold;
+}
+
+/*adjusts the size of the space to write answers*/
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 585px;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+/*Above: makes the text boxes bigger and more appealing*/
+
+input[type="submit"] {
+  width: 400px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/*Above: makes the submit button look better*/
+
+#submit:hover {
+  background-color: #eefcff;
+  flex: wrap;
+}
+
+#submit {
+  text-align: center;
+  width: auto;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #007bff;
+}
+
+/*changes the font of the dd/mm/yyyy bit*/
+input[type="date"] {
+  font-family: Arial, sans-serif;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/*changes the screen when device is small*/
+@media screen and (max-width: 600px) {
+  nav ul li {
+      display: block;
+      margin-right: 0;
+      margin-bottom: 5px;
+  }
+}
+
+/* Add a smooth colour transition effect to buttons */
+button, input[type="submit"] {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/*Makes the button background colour go darker and makes the button bigger when hovered over*/
+button:hover, input[type="submit"]:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}

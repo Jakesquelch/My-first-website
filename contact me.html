@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head id="main-header">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jake's CV / Contact Me</title>
+    <link rel="icon" type="image/x-icon" href="/code/images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="js/basic.js"></script>
+  </head>
+
+  <body id="body-section">
+    <nav id="nav-section">
+      <ul>
+        <a style="text-decoration: none; margin-right: 5px;" href="home.html">
+          <button>Home</button>
+        </a>
+
+        <a style="margin-left: 5px;" href="portfolio.html">
+          <button>Portfolio</button>
+        </a>
+      </ul>
+    </nav>
+
+    <header class="main-header">
+      <h1>Contact Me</h1>
+    </header>
+
+    <main>
+      <!--Below is where someone can contact me about project-->
+      <div class="contact-me">
+        <form id="contact-form" action="#" method="post">
+          <!--the # means the form data will be processed ib the same page where the form is located-->
+          <!--Below i create the labels and the boxes where responses can be put-->
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="description">Description:</label>
+          <textarea id="description" name="description" required></textarea>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="confirm-email">Confirm Email:</label>
+          <input
+            type="email"
+            id="confirm-email"
+            name="confirm-email"
+            required
+          />
+
+          <label for="phone">Phone Number: (optional)</label>
+          <input type="tel" id="phone" name="phone" />
+
+          <label for="contact-method">Preferred Contact Method:</label>
+          <select id="contact-method" name="contact-method">
+            <!--Creates a drop down where email or phone can be picked-->
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+          </select>
+
+          <label for="date">Project Date:</label>
+          <input type="date" id="date" name="date" min="yyyy-mm-dd" required />
+
+          <section id="submit">
+            <input type="submit" value="Submit" />
+          </section>
+        </form>
+      </div>
+
+      <!--Creates the little part below the contact form, where some contact methods are-->
+      <div id="contact-details">
+        <ul>
+          <a
+            style="text-decoration: none"
+            href="https://www.linkedin.com/in/jake-squelch-8b625a210/"
+          >
+            <!--Above text-decoration: none" gets rid of the weird black line i was trying to get rid of for TIMEEEEEEE-->
+            <img src="images/linkedin.png" alt="an image of linkedin logo" />
+          </a>
+
+          <a style="text-decoration: none" href="mailto:jakewsquelch@gmail.com">
+            <button>Email Me</button>
+          </a>
+
+          <a href="https://github.com/Jakesquelch">
+            <img src="images/github.png" alt="an image of linkedin logo" />
+          </a>
+        </ul>
+      </div>
+
+      <br />
+      <flexbox class="flex"> <b>SUN: 230145458</b> </flexbox>
+    </main>
+
+    <br />
+
+    <footer class="main-footer">
+      <p>&copy Jake Squelch</p>
+    </footer>
+  </body>
+</html>
